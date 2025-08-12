@@ -4,6 +4,7 @@ import { GraphQLClient } from 'graphql-request';
 const SHOPIFY_STORE_DOMAIN = process.env.SHOPIFY_STORE_DOMAIN || 'your-store.myshopify.com';
 const SHOPIFY_STOREFRONT_ACCESS_TOKEN = process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN || 'your-storefront-access-token';
 
+console.log('shopify', SHOPIFY_STORE_DOMAIN, SHOPIFY_STOREFRONT_ACCESS_TOKEN);
 // Create GraphQL client
 const shopifyClient = new GraphQLClient(
   `https://${SHOPIFY_STORE_DOMAIN}/api/2024-01/graphql.json`,
